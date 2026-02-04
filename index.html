@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimuPharma | Virtual Pharmaceutical Analytical Laboratory</title>
+    <meta name="description" content="SimuPharma - Digital Twin platform providing affordable access to pharmaceutical analytical instruments. Simulate HPLC, FTIR, and Gas Chromatography.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <span class="logo-text">SimuPharma</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#problem" class="nav-link">Problem</a></li>
+                <li><a href="#solution" class="nav-link">Solution</a></li>
+                <li><a href="#instruments" class="nav-link">Instruments</a></li>
+                <li><a href="#validation" class="nav-link">Validation</a></li>
+                <li><a href="#impact" class="nav-link">Impact</a></li>
+                <li><a href="#demo" class="nav-link nav-cta">
+                    <span>Try Demo</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
+                <div class="badge-glow"></div>
+                <span class="badge-icon"><i class="fas fa-microchip"></i></span>
+                <span>Digital Twin Technology</span>
+            </div>
+            
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                <span class="title-line">Virtual Pharmaceutical</span>
+                <span class="title-line gradient-text">Analytical Laboratory</span>
+            </h1>
+            
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">
+                Experience advanced analytical instruments through our 
+                <span class="highlight-text">Digital Twin</span> platform — 
+                making world-class pharmaceutical training 
+                <span class="highlight-text">accessible and affordable</span> for everyone.
+            </p>
+            
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-flask"></i></div>
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Instruments</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-bullseye"></i></div>
+                    <span class="stat-number">&lt;2%</span>
+                    <span class="stat-label">Deviation</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                    <span class="stat-number">USP</span>
+                    <span class="stat-label">Validated</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="500">
+                <a href="https://pranvdhanwate-stack.github.io/SimuPharmaFinale/" target="_blank" class="btn btn-primary">
+                    <span>Launch Simulator</span>
+                    <i class="fas fa-rocket"></i>
+                    <div class="btn-glow"></div>
+                </a>
+                <a href="#solution" class="btn btn-secondary">
+                    <span>Explore Features</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="600">
+            <div class="visual-container">
+                <div class="floating-card card-1">
+                    <i class="fas fa-chart-line"></i>
+                    <span>HPLC</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-wave-square"></i>
+                    <span>FTIR</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-fire"></i>
+                    <span>GC</span>
+                </div>
+                <div class="main-visual">
+                    <div class="visual-glow"></div>
+                    <img src="images/hero-bg.png" alt="SimuPharma Interface" onerror="this.style.display='none'">
+                    <div class="visual-placeholder">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Digital Twin Platform</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section problem-section" id="problem">
+        <div class="section-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    The Challenge
+                </span>
+                <h2 class="section-title">The Crisis in Pharmaceutical Education</h2>
+                <p class="section-description">
+                    Millions of pharmacy students graduate without ever touching the instruments they study in textbooks
+                </p>
+            </div>
+            
+            <div class="problem-grid">
+                <div class="problem-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="problem-card-inner">
+                        <div class="problem-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="problem-number">65-70%</div>
+                        <div class="problem-label">Colleges Lack Instruments</div>
+                        <div class="problem-detail">Most pharmacy institutions cannot afford HPLC, GC, or FTIR equipment</div>
+                        <div class="problem-card-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="problem-card-inner">
+                        <div class="problem-icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <div class="problem-number">₹35-100L</div>
+                        <div class="problem-label">Lab Setup Cost</div>
+                        <div class="problem-detail">Complete analytical laboratory requires crores of investment</div>
+                        <div class="problem-card-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="problem-card-inner">
+                        <div class="problem-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="problem-number">40:1</div>
+                        <div class="problem-label">Student Ratio</div>
+                        <div class="problem-detail">Even equipped colleges have severe access limitations</div>
+                        <div class="problem-card-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="problem-card-inner">
+                        <div class="problem-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="problem-number">1.5L+</div>
+                        <div class="problem-label">Students Affected</div>
+                        <div class="problem-detail">Graduate annually without hands-on instrument experience</div>
+                        <div class="problem-card-glow"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="problem-highlight" data-aos="fade-up" data-aos-delay="500">
+                <div class="highlight-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="highlight-content">
+                    <span class="highlight-stat">68%</span>
+                    <span class="highlight-text">of pharmacy graduates require 3-6 months additional training before becoming industry-ready</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Twin Section -->
+    <section class="section twin-section" id="solution">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-lightbulb"></i>
+                    The Innovation
+                </span>
+                <h2 class="section-title">What is a Digital Twin?</h2>
+            </div>
+            
+            <div class="twin-showcase" data-aos="fade-up" data-aos-delay="200">
+                <div class="twin-visual">
+                    <div class="twin-card real">
+                        <div class="twin-card-header">
+                            <i class="fas fa-flask"></i>
+                            <span>Real Instrument</span>
+                        </div>
+                        <div class="twin-card-body">
+                            <div class="twin-image-placeholder">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                        </div>
+                        <ul class="twin-features">
+                            <li><i class="fas fa-times-circle"></i> Costs ₹15-40 Lakhs</li>
+                            <li><i class="fas fa-times-circle"></i> Limited access hours</li>
+                            <li><i class="fas fa-times-circle"></i> Expensive consumables</li>
+                            <li><i class="fas fa-times-circle"></i> Requires maintenance</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="twin-connector">
+                        <div class="connector-line"></div>
+                        <div class="connector-badge">
+                            <div class="badge-pulse"></div>
+                            <span class="badge-text">SAME</span>
+                            <span class="badge-subtext">RESULTS</span>
+                        </div>
+                        <div class="connector-line"></div>
+                    </div>
+                    
+                    <div class="twin-card digital">
+                        <div class="twin-card-header">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Digital Twin</span>
+                        </div>
+                        <div class="twin-card-body">
+                            <div class="twin-image-placeholder digital-placeholder">
+                                <i class="fas fa-atom"></i>
+                                <div class="digital-particles">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="twin-features">
+                            <li><i class="fas fa-check-circle"></i> Highly Affordable</li>
+                            <li><i class="fas fa-check-circle"></i> 24/7 Unlimited Access</li>
+                            <li><i class="fas fa-check-circle"></i> Zero Consumables</li>
+                            <li><i class="fas fa-check-circle"></i> Works Offline</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="twin-definition" data-aos="fade-up" data-aos-delay="300">
+                <blockquote>
+                    <i class="fas fa-quote-left"></i>
+                    "A Digital Twin is a virtual replica of a physical system that simulates its behavior with real-world accuracy"
+                    <i class="fas fa-quote-right"></i>
+                </blockquote>
+                <p class="definition-note">
+                    SimuPharma creates physics-accurate digital twins of pharmaceutical instruments. 
+                    Students operate these virtual instruments exactly as they would real ones, 
+                    getting results that match real equipment output within <strong>&lt;2% accuracy</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-star"></i>
+                    Why SimuPharma
+                </span>
+                <h2 class="section-title">Key Features</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="feature-icon-bg"></div>
+                    </div>
+                    <h3>Physics-Accurate</h3>
+                    <p>Built on real scientific models including Van Deemter equation, Beer-Lambert law, and Gaussian peak modeling</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="feature-icon-bg"></div>
+                    </div>
+                    <h3>Access Anywhere</h3>
+                    <p>Works on any modern browser, any device. Even works offline for areas with limited connectivity</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="feature-icon-bg"></div>
+                    </div>
+                    <h3>Validated Results</h3>
+                    <p>Compliant with USP &lt;621&gt; and ICH Q2(R1) guidelines. Calibrated against NIST standards</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div class="feature-icon-bg"></div>
+                    </div>
+                    <h3>3D Interactive</h3>
+                    <p>WebGL-powered realistic 3D instrument models with interactive controls and real-time feedback</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-area"></i>
+                        </div>
+                        <div class="feature-icon-bg"></div>
+                    </div>
+                    <h3>Real-Time Graphs</h3>
+                    <p>Generate chromatograms and spectra in real-time as you adjust parameters, just like real instruments</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="feature-icon-bg"></div>
+                    </div>
+                    <h3>Sustainable</h3>
+                    <p>No chemicals, no solvents, no waste disposal. 100% sustainable and environmentally friendly education</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instruments Section -->
+    <section class="section instruments-section" id="instruments">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-microscope"></i>
+                    The Modules
+                </span>
+                <h2 class="section-title">Three Powerful Digital Twins</h2>
+                <p class="section-description">
+                    Each module is a complete, validated simulation of professional laboratory equipment
+                </p>
+            </div>
+            
+            <div class="instruments-tabs" data-aos="fade-up" data-aos-delay="100">
+                <button class="tab-btn active" data-tab="hplc">
+                    <i class="fas fa-chart-line"></i>
+                    <span>HPLC</span>
+                </button>
+                <button class="tab-btn" data-tab="ftir">
+                    <i class="fas fa-wave-square"></i>
+                    <span>FTIR</span>
+                </button>
+                <button class="tab-btn" data-tab="gc">
+                    <i class="fas fa-fire"></i>
+                    <span>Gas Chromatography</span>
+                </button>
+            </div>
+            
+            <div class="instruments-content">
+                <!-- HPLC Panel -->
+                <div class="instrument-panel active" id="hplc">
+                    <div class="instrument-grid">
+                        <div class="instrument-info" data-aos="fade-right">
+                            <div class="instrument-header">
+                                <div class="instrument-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="instrument-titles">
+                                    <h3>High-Performance Liquid Chromatography</h3>
+                                    <div class="instrument-value">
+                                        <span class="value-label">Real Equipment Value:</span>
+                                        <span class="value-amount">₹15-40 Lakhs</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <p class="instrument-description">
+                                Separate, identify, and quantify components in liquid samples. 
+                                Our HPLC simulation uses the Van Deemter equation for efficiency 
+                                calculations and Gaussian peak modeling for accurate chromatogram generation.
+                            </p>
+                            
+                            <ul class="instrument-features">
+                                <li><i class="fas fa-check"></i> Interactive parameter controls (flow rate, mobile phase, column)</li>
+                                <li><i class="fas fa-check"></i> Real-time chromatogram generation</li>
+                                <li><i class="fas fa-check"></i> Peak integration and automatic calculations</li>
+                                <li><i class="fas fa-check"></i> System suitability parameters (N, Rs, k')</li>
+                                <li><i class="fas fa-check"></i> Multiple drug compound database</li>
+                            </ul>
+                            
+                            <div class="instrument-validation">
+                                <div class="validation-badge">
+                                    <i class="fas fa-award"></i>
+                                    <span>Validated: &lt;2% deviation vs Shimadzu LC-20AD</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="instrument-visual" data-aos="fade-left">
+                            <div class="visual-card">
+                                <div class="visual-header">
+                                    <span class="visual-title">HPLC Interface</span>
+                                    <div class="visual-controls">
+                                        <span class="control-dot red"></span>
+                                        <span class="control-dot yellow"></span>
+                                        <span class="control-dot green"></span>
+                                    </div>
+                                </div>
+                                <div class="visual-body">
+                                    <img src="images/hplc-interface.png" alt="HPLC Simulation" onerror="this.style.display='none'">
+                                    <div class="visual-placeholder">
+                                        <div class="placeholder-graph">
+                                            <svg viewBox="0 0 200 100" class="chromatogram-svg">
+                                                <path class="baseline" d="M0,80 L200,80" />
+                                                <path class="peak peak-1" d="M30,80 Q35,20 40,80" />
+                                                <path class="peak peak-2" d="M80,80 Q90,10 100,80" />
+                                                <path class="peak peak-3" d="M140,80 Q155,25 170,80" />
+                                            </svg>
+                                        </div>
+                                        <span class="placeholder-label">Real-Time Chromatogram</span>
+                                    </div>
+                                </div>
+                                <div class="visual-footer">
+                                    <div class="result-item">
+                                        <span class="result-label">Retention Time</span>
+                                        <span class="result-value">3.38 min</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-label">Plates (N)</span>
+                                        <span class="result-value">12,450</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-label">Resolution</span>
+                                        <span class="result-value">4.2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FTIR Panel -->
+                <div class="instrument-panel" id="ftir">
+                    <div class="instrument-grid">
+                        <div class="instrument-info" data-aos="fade-right">
+                            <div class="instrument-header">
+                                <div class="instrument-icon ftir-icon">
+                                    <i class="fas fa-wave-square"></i>
+                                </div>
+                                <div class="instrument-titles">
+                                    <h3>Fourier Transform Infrared Spectroscopy</h3>
+                                    <div class="instrument-value">
+                                        <span class="value-label">Real Equipment Value:</span>
+                                        <span class="value-amount">₹8-25 Lakhs</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <p class="instrument-description">
+                                Identify functional groups and molecular structures through IR absorption. 
+                                Our FTIR simulation implements Lorentzian line shapes and Beer-Lambert law 
+                                for accurate spectral generation across the full infrared range.
+                            </p>
+                            
+                            <ul class="instrument-features">
+                                <li><i class="fas fa-check"></i> Full spectral range (400-4000 cm⁻¹)</li>
+                                <li><i class="fas fa-check"></i> Automatic functional group identification</li>
+                                <li><i class="fas fa-check"></i> Transmittance & Absorbance display modes</li>
+                                <li><i class="fas fa-check"></i> Peak labeling and annotation tools</li>
+                                <li><i class="fas fa-check"></i> Reference spectra comparison library</li>
+                            </ul>
+                            
+                            <div class="instrument-validation">
+                                <div class="validation-badge ftir-badge">
+                                    <i class="fas fa-award"></i>
+                                    <span>Calibrated: NIST SRM 1921b (Polystyrene Standard)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="instrument-visual" data-aos="fade-left">
+                            <div class="visual-card ftir-card">
+                                <div class="visual-header">
+                                    <span class="visual-title">FTIR Interface</span>
+                                    <div class="visual-controls">
+                                        <span class="control-dot red"></span>
+                                        <span class="control-dot yellow"></span>
+                                        <span class="control-dot green"></span>
+                                    </div>
+                                </div>
+                                <div class="visual-body">
+                                    <img src="images/ftir-interface.png" alt="FTIR Simulation" onerror="this.style.display='none'">
+                                    <div class="visual-placeholder ftir-placeholder">
+                                        <div class="placeholder-graph">
+                                            <svg viewBox="0 0 200 100" class="spectrum-svg">
+                                                <path class="baseline" d="M0,20 L200,20" />
+                                                <path class="spectrum-line" d="M0,20 L20,20 Q25,80 30,20 L50,20 Q55,60 60,20 L90,20 Q100,90 110,20 L140,20 Q150,70 160,20 L180,20 Q185,50 190,20 L200,20" />
+                                            </svg>
+                                        </div>
+                                        <span class="placeholder-label">IR Spectrum (400-4000 cm⁻¹)</span>
+                                    </div>
+                                </div>
+                                <div class="visual-footer">
+                                    <div class="result-item">
+                                        <span class="result-label">O-H Stretch</span>
+                                        <span class="result-value">3350 cm⁻¹</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-label">C=O Stretch</span>
+                                        <span class="result-value">1715 cm⁻¹</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-label">C-H Bend</span>
+                                        <span class="result-value">1450 cm⁻¹</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- GC Panel -->
+                <div class="instrument-panel" id="gc">
+                    <div class="instrument-grid">
+                        <div class="instrument-info" data-aos="fade-right">
+                            <div class="instrument-header">
+                                <div class="instrument-icon gc-icon">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <div class="instrument-titles">
+                                    <h3>Gas Chromatography</h3>
+                                    <div class="instrument-value">
+                                        <span class="value-label">Real Equipment Value:</span>
+                                        <span class="value-amount">₹12-35 Lakhs</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <p class="instrument-description">
+                                Analyze volatile compounds with high-resolution separation capabilities. 
+                                Our GC simulation includes complete temperature programming, carrier gas effects, 
+                                and FID detector modeling with real-time separation visualization.
+                            </p>
+                            
+                            <ul class="instrument-features">
+                                <li><i class="fas fa-check"></i> Temperature programming (isothermal & gradient)</li>
+                                <li><i class="fas fa-check"></i> Carrier gas selection (Helium, Nitrogen, Hydrogen)</li>
+                                <li><i class="fas fa-check"></i> FID detector simulation with sensitivity control</li>
+                                <li><i class="fas fa-check"></i> Real-time separation visualization</li>
+                                <li><i class="fas fa-check"></i> Retention index calculations (Kovats Index)</li>
+                            </ul>
+                            
+                            <div class="instrument-validation">
+                                <div class="validation-badge gc-badge">
+                                    <i class="fas fa-award"></i>
+                                    <span>Van Deemter Model Verified for Efficiency</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="instrument-visual" data-aos="fade-left">
+                            <div class="visual-card gc-card">
+                                <div class="visual-header">
+                                    <span class="visual-title">GC Interface</span>
+                                    <div class="visual-controls">
+                                        <span class="control-dot red"></span>
+                                        <span class="control-dot yellow"></span>
+                                        <span class="control-dot green"></span>
+                                    </div>
+                                </div>
+                                <div class="visual-body">
+                                    <img src="images/gc-interface.png" alt="GC Simulation" onerror="this.style.display='none'">
+                                    <div class="visual-placeholder gc-placeholder">
+                                        <div class="placeholder-graph">
+                                            <svg viewBox="0 0 200 100" class="gc-svg">
+                                                <path class="baseline" d="M0,80 L200,80" />
+                                                <path class="peak gc-peak-1" d="M20,80 Q25,30 30,80" />
+                                                <path class="peak gc-peak-2" d="M50,80 Q58,15 66,80" />
+                                                <path class="peak gc-peak-3" d="M90,80 Q100,25 110,80" />
+                                                <path class="peak gc-peak-4" d="M130,80 Q142,40 154,80" />
+                                                <path class="peak gc-peak-5" d="M170,80 Q178,50 186,80" />
+                                            </svg>
+                                        </div>
+                                        <span class="placeholder-label">GC Chromatogram with FID</span>
+                                    </div>
+                                </div>
+                                <div class="visual-footer">
+                                    <div class="result-item">
+                                        <span class="result-label">Oven Temp</span>
+                                        <span class="result-value">180°C</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-label">Carrier Gas</span>
+                                        <span class="result-value">Helium</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-label">Flow Rate</span>
+                                        <span class="result-value">1.2 mL/min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instruments-total" data-aos="fade-up" data-aos-delay="200">
+                <div class="total-card">
+                    <div class="total-item">
+                        <span class="total-label">Total Real Equipment Value</span>
+                        <span class="total-amount red">₹35-100 Lakhs</span>
+                    </div>
+                    <div class="total-divider">
+                        <span>→</span>
+                    </div>
+                    <div class="total-item">
+                        <span class="total-label">SimuPharma Access</span>
+                        <span class="total-amount green">Affordable</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Validation Section -->
+    <section class="section validation-section" id="validation">
+        <div class="section-bg-pattern dark"></div>
+        <div class="container">
+            <div class="section-header light" data-aos="fade-up">
+                <span class="section-tag light">
+                    <i class="fas fa-check-double"></i>
+                    The Proof
+                </span>
+                <h2 class="section-title">Digital Twin Validation</h2>
+                <p class="section-description">
+                    Our simulations are validated against real instruments and international pharmacopoeial standards
+                </p>
+            </div>
+            
+            <div class="validation-showcase">
+                <div class="comparison-visual" data-aos="fade-up" data-aos-delay="100">
+                    <div class="comparison-header">
+                        <h3>Real vs SimuPharma Output</h3>
+                        <div class="comparison-badge">
+                            <span class="badge-value">&lt;2%</span>
+                            <span class="badge-label">Deviation</span>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-container">
+                        <div class="comparison-side real-side">
+                            <div class="comparison-label">
+                                <i class="fas fa-flask"></i>
+                                <span>Shimadzu LC-20AD</span>
+                            </div>
+                            <div class="comparison-graph">
+                                <div class="graph-placeholder">
+                                    <svg viewBox="0 0 150 80" class="real-graph-svg">
+                                        <path class="graph-baseline" d="M10,60 L140,60" />
+                                        <path class="graph-peak" d="M40,60 Q50,15 60,60" />
+                                        <path class="graph-peak" d="M90,60 Q105,20 120,60" />
+                                    </svg>
+                                    <span class="rt-label">tR = 3.42 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="comparison-center">
+                            <div class="deviation-badge">
+                                <div class="badge-glow"></div>
+                                <span class="deviation-value">&lt;2%</span>
+                                <span class="deviation-label">Deviation</span>
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="comparison-side simu-side">
+                            <div class="comparison-label">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>SimuPharma</span>
+                            </div>
+                            <div class="comparison-graph">
+                                <div class="graph-placeholder">
+                                    <svg viewBox="0 0 150 80" class="simu-graph-svg">
+                                        <path class="graph-baseline" d="M10,60 L140,60" />
+                                        <path class="graph-peak simu" d="M40,60 Q50,16 60,60" />
+                                        <path class="graph-peak simu" d="M90,60 Q105,21 120,60" />
+                                    </svg>
+                                    <span class="rt-label simu">tR = 3.38 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="validation-table-wrap" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Retention Time Validation Data</h3>
+                    <div class="table-container">
+                        <table class="validation-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Real RT (min)</th>
+                                    <th>SimuPharma RT</th>
+                                    <th>Deviation</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="compound-name">Paracetamol</span></td>
+                                    <td>3.42</td>
+                                    <td>3.38</td>
+                                    <td>1.17%</td>
+                                    <td><span class="status-pass"><i class="fas fa-check"></i> Pass</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="compound-name">Aspirin</span></td>
+                                    <td>5.18</td>
+                                    <td>5.12</td>
+                                    <td>1.16%</td>
+                                    <td><span class="status-pass"><i class="fas fa-check"></i> Pass</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="compound-name">Caffeine</span></td>
+                                    <td>4.76</td>
+                                    <td>4.69</td>
+                                    <td>1.47%</td>
+                                    <td><span class="status-pass"><i class="fas fa-check"></i> Pass</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="compound-name">Ibuprofen</span></td>
+                                    <td>8.24</td>
+                                    <td>8.11</td>
+                                    <td>1.58%</td>
+                                    <td><span class="status-pass"><i class="fas fa-check"></i> Pass</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="compound-name">Metformin</span></td>
+                                    <td>2.89</td>
+                                    <td>2.86</td>
+                                    <td>1.04%</td>
+                                    <td><span class="status-pass"><i class="fas fa-check"></i> Pass</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="table-note">
+                        <i class="fas fa-info-circle"></i>
+                        USP &lt;621&gt; acceptance criteria: RSD ≤ 2.0% — <strong>All compounds pass</strong>
+                    </p>
+                </div>
+                
+                <div class="standards-grid" data-aos="fade-up" data-aos-delay="300">
+                    <div class="standard-card">
+                        <div class="standard-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="standard-info">
+                            <span class="standard-name">USP &lt;621&gt;</span>
+                            <span class="standard-desc">Chromatography Guidelines</span>
+                        </div>
+                        <div class="standard-status">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="standard-card">
+                        <div class="standard-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="standard-info">
+                            <span class="standard-name">ICH Q2(R1)</span>
+                            <span class="standard-desc">Validation Guidelines</span>
+                        </div>
+                        <div class="standard-status">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="standard-card">
+                        <div class="standard-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="standard-info">
+                            <span class="standard-name">NIST SRM 1921b</span>
+                            <span class="standard-desc">FTIR Calibration</span>
+                        </div>
+                        <div class="standard-status">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="section tech-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-cogs"></i>
+                    Under The Hood
+                </span>
+                <h2 class="section-title">Technology & Science</h2>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-card-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Technology Stack</h3>
+                    </div>
+                    <ul class="tech-list">
+                        <li>
+                            <div class="tech-icon"><i class="fab fa-html5"></i></div>
+                            <div class="tech-info">
+                                <span class="tech-name">HTML5, CSS3, JavaScript</span>
+                                <span class="tech-desc">Modern web standards</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-icon"><i class="fas fa-cube"></i></div>
+                            <div class="tech-info">
+                                <span class="tech-name">WebGL (Three.js)</span>
+                                <span class="tech-desc">3D instrument rendering</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="tech-info">
+                                <span class="tech-name">Canvas API</span>
+                                <span class="tech-desc">Real-time graph generation</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-icon"><i class="fas fa-database"></i></div>
+                            <div class="tech-info">
+                                <span class="tech-name">JSON Database</span>
+                                <span class="tech-desc">Molecular properties storage</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-icon"><i class="fas fa-wifi-slash"></i></div>
+                            <div class="tech-info">
+                                <span class="tech-name">Service Workers</span>
+                                <span class="tech-desc">Offline functionality</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-card-header">
+                        <i class="fas fa-square-root-alt"></i>
+                        <h3>Scientific Models</h3>
+                    </div>
+                    <ul class="tech-list">
+                        <li>
+                            <div class="tech-icon"><i class="fas fa-function"></i></div>
+                            <div class="tech-info">
+                                <span class="tech-name">Van Deemter Equation</span>
+                                <span class="tech-desc">H = A + B/μ + Cμ</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-icon"><i class="fas fa-chart-bell"></i></div>
+                            <div class="tech-info">
+                                <span class="tech-name">Gaussian Peak Model</span>
+                                <span class="tech-desc">HPLC/GC peak shapes</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-icon"><i class="fas fa-wave-square"></i></div>
+                            <div class="tech-info">
+                                <span class="tech-name">Lorentzian Line Shape</span>
+                                <span class="tech-desc">FTIR spectral bands</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-icon"><i class="fas fa-lightbulb"></i></div>
+                            <div class="tech-info">
+                                <span class="tech-name">Beer-Lambert Law</span>
+                                <span class="tech-desc">A = εbc</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tech-icon"><i class="fas fa-thermometer-half"></i></div>
+                            <div class="tech-info">
+                                <span class="tech-name">Kovats Retention Index</span>
+                                <span class="tech-desc">GC identification</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tech-highlight" data-aos="fade-up" data-aos-delay="300">
+                <div class="highlight-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="highlight-content">
+                    <strong>100% Client-Side Processing</strong>
+                    <span>All calculations run in your browser. No server lag, works offline, your data stays private.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="section impact-section" id="impact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-chart-pie"></i>
+                    The Difference
+                </span>
+                <h2 class="section-title">Impact & Value</h2>
+            </div>
+            
+            <div class="impact-grid">
+                <div class="impact-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="impact-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="impact-value">15L+</div>
+                    <div class="impact-label">Potential Student Beneficiaries</div>
+                </div>
+                
+                <div class="impact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="impact-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="impact-value">98.7%</div>
+                    <div class="impact-label">Carbon Footprint Reduction</div>
+                </div>
+                
+                <div class="impact-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="impact-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <div class="impact-value">Zero</div>
+                    <div class="impact-label">Chemical Waste Generated</div>
+                </div>
+                
+                <div class="impact-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="impact-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="impact-value">3,000+</div>
+                    <div class="impact-label">Colleges Can Benefit</div>
+                </div>
+            </div>
+            
+            <div class="sdg-section" data-aos="fade-up" data-aos-delay="500">
+                <h3>Aligned with UN Sustainable Development Goals</h3>
+                <div class="sdg-grid">
+                    <div class="sdg-item">
+                        <div class="sdg-number" style="background: linear-gradient(135deg, #C5192D, #E5243B);">4</div>
+                        <span>Quality Education</span>
+                    </div>
+                    <div class="sdg-item">
+                        <div class="sdg-number" style="background: linear-gradient(135deg, #FD6925, #FF8C00);">9</div>
+                        <span>Innovation</span>
+                    </div>
+                    <div class="sdg-item">
+                        <div class="sdg-number" style="background: linear-gradient(135deg, #DD1367, #FF1493);">10</div>
+                        <span>Reduced Inequalities</span>
+                    </div>
+                    <div class="sdg-item">
+                        <div class="sdg-number" style="background: linear-gradient(135deg, #BF8B2E, #DAA520);">12</div>
+                        <span>Responsible Consumption</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Feedback Section -->
+    <section class="section feedback-section">
+        <div class="section-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-users"></i>
+                    User Validation
+                </span>
+                <h2 class="section-title">What Users Say</h2>
+            </div>
+            
+            <div class="feedback-stats" data-aos="fade-up" data-aos-delay="100">
+                <div class="feedback-stat">
+                    <div class="stat-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="progress" cx="50" cy="50" r="45" style="--progress: 84;"></circle>
+                        </svg>
+                        <span class="stat-value">4.2/5</span>
+                    </div>
+                    <span class="stat-name">User Satisfaction</span>
+                </div>
+                
+                <div class="feedback-stat">
+                    <div class="stat-badge">
+                        <span class="badge-number">65</span>
+                    </div>
+                    <span class="stat-name">Net Promoter Score</span>
+                    <span class="stat-note">(Excellent)</span>
+                </div>
+                
+                <div class="feedback-stat">
+                    <div class="stat-improvement">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+45-86%</span>
+                    </div>
+                    <span class="stat-name">Learning Improvement</span>
+                </div>
+                
+                <div class="feedback-stat">
+                    <div class="stat-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="progress expert" cx="50" cy="50" r="45" style="--progress: 96;"></circle>
+                        </svg>
+                        <span class="stat-value">4.8/5</span>
+                    </div>
+                    <span class="stat-name">Expert Rating</span>
+                </div>
+            </div>
+            
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                    "I finally understand how HPLC actually works. The simulation feels just like 
+                    operating the real instrument. This is exactly what pharmacy education needs."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <span class="author-role">Beta Test Student</span>
+                </div>
+            </div>
+            
+            <div class="expert-badge" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-check-circle"></i>
+                <span>Reviewed & Validated by Project Guide & Department HOD</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="section roadmap-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-road"></i>
+                    The Future
+                </span>
+                <h2 class="section-title">Development Roadmap</h2>
+            </div>
+            
+            <div class="roadmap-timeline" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item current">
+                    <div class="timeline-marker">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">NOW</span>
+                        <h4>3 Core Modules</h4>
+                        <p>HPLC, FTIR, and GC fully functional with validated accuracy</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">6 MONTHS</span>
+                        <h4>6 Total Modules</h4>
+                        <p>Adding UV-Visible Spectrophotometer and Mass Spectrometry</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">12 MONTHS</span>
+                        <h4>Mobile App + AI</h4>
+                        <p>Native mobile apps with AI-powered analysis and feedback</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">24 MONTHS</span>
+                        <h4>VR/AR Experience</h4>
+                        <p>Immersive virtual reality lab with nationwide deployment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section" id="demo">
+        <div class="cta-bg">
+            <div class="cta-orb orb-1"></div>
+            <div class="cta-orb orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Experience the Future of Pharma Education</h2>
+                <p class="cta-description">
+                    Access instruments worth crores. Learn real skills. Affordable for everyone.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="" target="_blank" class="btn btn-primary btn-large">
+                        <i class="fas fa-rocket"></i>
+                        <span>Launch SimuPharma Now</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                </div>
+                
+                <div class="cta-tagline">
+                    <span class="tagline-icon"><i class="fas fa-quote-left"></i></span>
+                    <span class="tagline-text">
+                        "Innovation doesn't need big budgets — it needs big ideas."
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,64 C480,150 960,-20 1440,64 L1440,120 L0,120 Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-flask"></i>
+                        <span>SimuPharma</span>
+                    </div>
+                    <p>Virtual Pharmaceutical Analytical Laboratory</p>
+                    <p class="footer-tagline">Democratizing Pharmaceutical Education Through Digital Twin Technology</p>
+                </div>
+                
+                <div class="footer-badge">
+                    <i class="fas fa-award"></i>
+                    <span>Avishkar Inter-University Competition Finalist 2026</span>
+                    <i class="fas fa-award"></i>
+                    <span>Assured Seed Funding from University</span>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 SimuPharma. Developed for Academic Innovation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
